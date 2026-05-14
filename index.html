@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>職場女性個人化彩妝適配指南</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.x/dist/tabler-icons.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#FAF7F2;--deep:#2D1F1A;--rose:#8B4A4A;--blush:#C9956C;
+  --blush-light:#F0D5C3;--gold:#B8966A;--text-dark:#2D1F1A;
+  --text-mid:#5C4033;--text-light:#9C7B6E;--border:#E5D5C8;
+  --surface:#FFFFFF;--surface-soft:#FDF9F5;
+  --success-bg:#EAF3DE;--success-text:#3B6D11;
+  --warn-bg:#FAEEDA;--warn-text:#854F0B;
+  --shadow:0 2px 16px rgba(45,31,26,0.08);
+}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);color:var(--text-dark);min-height:100vh;line-height:1.6}
+.hero{background:linear-gradient(135deg,#2D1F1A 0%,#5C3D30 55%,#8B5E4A 100%);padding:56px 24px 48px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(201,149,108,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(240,213,195,0.7);text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-family:'Noto Serif TC',serif;font-size:clamp(20px,4vw,32px);font-weight:300;color:#FAF7F2;letter-spacing:2px;line-height:1.45;margin-bottom:10px}
+.hero h1 strong{font-weight:500;color:var(--blush-light)}
+.hero-desc{font-size:12px;color:rgba(250,247,242,0.55);letter-spacing:0.5px;margin-top:14px}
+.hero-badges{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+.hero-badge{font-size:11px;color:var(--blush-light);background:rgba(201,149,108,0.12);border:1px solid rgba(201,149,108,0.25);padding:5px 14px;border-radius:20px;letter-spacing:0.3px}
+.main{max-width:780px;margin:0 auto;padding:40px 20px 60px}
+.selector-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px 24px;box-shadow:var(--shadow);margin-bottom:24px}
+.selector-heading{font-size:11px;font-weight:500;color:var(--text-light);letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.select-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.select-group label{display:block;font-size:12px;color:var(--text-mid);margin-bottom:6px;font-weight:500}
+.select-group select{width:100%;padding:9px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface-soft);font-family:'Noto Sans TC',sans-serif;font-size:13px;color:var(--text-dark);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239C7B6E' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;cursor:pointer;transition:border-color 0.2s}
+.select-group select:focus{outline:none;border-color:var(--blush)}
+.empty-state{text-align:center;padding:40px 20px;color:var(--text-light)}
+.empty-state i{font-size:32px;display:block;margin-bottom:10px;opacity:0.5}
+.empty-state p{font-size:14px}
+.result-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);animation:fadeIn 0.25s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.result-header{background:linear-gradient(90deg,#F5EBE3,#FDF9F5);padding:16px 24px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--border)}
+.result-header i{font-size:18px;color:var(--rose)}
+.result-header span{font-size:14px;font-weight:500;color:var(--text-dark)}
+.result-body{padding:20px 24px}
+.result-section{margin-bottom:20px}
+.result-section:last-of-type{margin-bottom:0}
+.section-label{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--text-light);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.rec-row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #F5EBE3;align-items:flex-start}
+.rec-row:last-child{border-bottom:none;padding-bottom:0}
+.rec-icon{font-size:16px;color:var(--blush);flex-shrink:0;margin-top:2px}
+.rec-label{font-size:12px;color:var(--text-light);min-width:72px;flex-shrink:0;padding-top:1px}
+.rec-content{flex:1}
+.rec-value{font-size:13px;font-weight:500;color:var(--text-dark);display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.rec-note{font-size:11px;color:var(--text-light);margin-top:3px;line-height:1.5}
+.badge-match{font-size:10px;font-weight:500;background:var(--success-bg);color:var(--success-text);padding:2px 8px;border-radius:10px;display:inline-flex;align-items:center;gap:3px}
+.badge-diff{font-size:10px;font-weight:500;background:var(--warn-bg);color:var(--warn-text);padding:2px 8px;border-radius:10px;display:inline-flex;align-items:center;gap:3px}
+.consensus{background:var(--surface-soft);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-top:20px}
+.consensus-title{font-size:11px;color:var(--text-mid);font-weight:500;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.consensus-pills{display:flex;flex-wrap:wrap;gap:6px}
+.cpill{font-size:11px;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:3px 10px;color:var(--text-mid)}
+.source-note{font-size:10px;color:var(--text-light);margin-top:16px;padding-top:14px;border-top:1px solid var(--border);line-height:1.6}
+.footer{text-align:center;padding:28px 20px;font-size:11px;color:var(--text-light);border-top:1px solid var(--border);background:var(--surface-soft);line-height:1.8}
+.footer strong{color:var(--text-mid)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <p class="hero-eyebrow">碩士論文附錄三</p>
+  <h1>職場女性<strong>個人化彩妝</strong>適配指南</h1>
+  <p class="hero-desc">依據個人臉部條件，查詢具學術依據之職場彩妝建議</p>
+  <div class="hero-badges">
+    <span class="hero-badge">問卷調查 N = 169</span>
+    <span class="hero-badge">Kendall's W = .893</span>
+    <span class="hero-badge">10 位個案實作驗證</span>
+  </div>
+</header>
+
+<main class="main">
+  <div class="selector-card">
+    <p class="selector-heading">選擇您的臉部條件</p>
+    <div class="select-grid">
+      <div class="select-group">
+        <label for="sel-face">臉型</label>
+        <select id="sel-face">
+          <option value="">— 請選擇 —</option>
+          <option value="oval">鵝蛋臉（橢圓臉）</option>
+          <option value="round">圓臉</option>
+          <option value="long">長臉</option>
+          <option value="square">方臉</option>
+          <option value="diamond">菱型臉</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label for="sel-skin">膚色</label>
+        <select id="sel-skin">
+          <option value="">— 請選擇 —</option>
+          <option value="fair">白皙膚色（高明度）</option>
+          <option value="medium">健康膚色（中低明度）</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label for="sel-texture">膚質</label>
+        <select id="sel-texture">
+          <option value="">— 請選擇 —</option>
+          <option value="dry">乾性膚質</option>
+          <option value="combo">混合性膚質</option>
+          <option value="normal">中性膚質</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label for="sel-age">年齡世代</label>
+        <select id="sel-age">
+          <option value="">— 請選擇 —</option>
+          <option value="young">20–30 歲</option>
+          <option value="mature">31–40 歲</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="result-area">
+    <div class="empty-state">
+      <i class="ti ti-wand" aria-hidden="true"></i>
+      <p>請選擇至少一項條件，顯示個人化適配建議</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <strong>職場女性彩妝偏好與臉部條件適配性研究</strong><br>
+  本工具依據碩士論文研究結果建置，僅供學術參考使用<br>
+  雙層審美結構：共識基調＋條件適配 ｜ 揭示亞系流行錨定效應
+</footer>
+
+<script>
+const DB={
+  face:{
+    oval:{brow:'弧型眉',match:true,logic:'鵝蛋臉為均衡臉型基準，弧型眉偏好與適配一致，維持即可'},
+    round:{brow:'自然帶眉峰',match:false,popular:'弧型眉（50.00%）',logic:'弧型與圓潤輪廓視覺重複，反強化圓感；帶眉峰可拉伸縱向比例'},
+    long:{brow:'平眉',match:false,popular:'弧型眉（52.94%）',logic:'弧型拱度加劇縱向拉伸；平眉橫向拉寬視覺比例以中和延伸感'},
+    square:{brow:'弧型眉',match:false,popular:'自然帶眉峰（42.31%）',logic:'眉峰稜角呼應方形輪廓反強化方感；弧型眉可有效柔化稜角'},
+    diamond:{brow:'弧型眉',match:true,logic:'菱型臉之偏好與專業適配一致，維持弧型眉即可'}
+  },
+  skin:{
+    fair:{foundation:'光澤肌底妝',shadow:'低至中飽和眼影',logic:'高明度膚色搭配低飽和眼影，避免對比過強，維持整體輕盈感'},
+    medium:{foundation:'光澤肌底妝',shadow:'中至高飽和眼影',logic:'中低明度膚色需較高飽和度達到相近妝感效果，有效提亮氣色'}
+  },
+  texture:{
+    dry:{foundation:'光澤型底妝（偏好比例 58.33%）',logic:'光澤底妝兼具視覺修飾與滋潤感知雙重效果，避免霧面加劇乾紋'},
+    combo:{foundation:'自然質感（T字控油＋其他部位保濕）',logic:'分區域底妝策略兼顧控油與保濕，整體呈現自然均衡膚感'},
+    normal:{foundation:'光澤或自然質感均適宜',logic:'中性膚質適配彈性較大，可聚焦於提亮與膚色均勻感的強化'}
+  },
+  age:{
+    young:{style:'韓系妝感',pct:'47.89%',desc:'清透、水潤、自然立體；適度修容打亮增強層次感',logic:'略高於日系（42.25%），符合年輕職場活力形象'},
+    mature:{style:'日系妝感',pct:'57.14%',desc:'精緻、清透、不過度修飾；底妝精緻度與眼部神采為強化重點',logic:'明顯高於韓系（34.69%），差距逾 22 個百分點，符合成熟職場專業形象期待'}
+  }
+};
+const CONSENSUS=['淡妝 91.72%','弧型眉 54.44%','光澤肌底妝 45.56%','自然感腮紅 55.03%','自然裸感唇彩 72.19%'];
+
+function row(icon,label,value,note,badge){
+  return `<div class="rec-row">
+    <i class="ti ti-${icon} rec-icon" aria-hidden="true"></i>
+    <span class="rec-label">${label}</span>
+    <div class="rec-content">
+      <div class="rec-value">${value}${badge||''}</div>
+      ${note?`<p class="rec-note">${note}</p>`:''}
+    </div>
+  </div>`;
+}
+
+function render(){
+  const f=document.getElementById('sel-face').value;
+  const s=document.getElementById('sel-skin').value;
+  const t=document.getElementById('sel-texture').value;
+  const a=document.getElementById('sel-age').value;
+  const area=document.getElementById('result-area');
+  if(!f&&!s&&!t&&!a){
+    area.innerHTML=`<div class="empty-state"><i class="ti ti-wand" aria-hidden="true"></i><p>請選擇至少一項條件，顯示個人化適配建議</p></div>`;
+    return;
+  }
+  let sec='';
+  if(f&&DB.face[f]){
+    const d=DB.face[f];
+    const badge=d.match
+      ?`<span class="badge-match"><i class="ti ti-check" aria-hidden="true"></i>偏好一致</span>`
+      :`<span class="badge-diff"><i class="ti ti-alert-triangle" aria-hidden="true"></i>建議修正</span>`;
+    let note=d.logic;
+    if(!d.match)note+=`<br>大眾偏好：${d.popular}`;
+    sec+=`<div class="result-section">
+      <p class="section-label"><i class="ti ti-eye-sparkles" aria-hidden="true"></i>眉型建議</p>
+      ${row('mood-edit','建議眉型',d.brow,note,badge)}
+    </div>`;
+  }
+  if(s&&DB.skin[s]){
+    const d=DB.skin[s];
+    sec+=`<div class="result-section">
+      <p class="section-label"><i class="ti ti-droplet" aria-hidden="true"></i>底妝與眼影建議</p>
+      ${row('droplet','底妝質感',d.foundation,d.logic)}
+      ${row('palette','眼影飽和度',d.shadow,'請依個人偏好於建議範圍內選擇適合色階')}
+    </div>`;
+  }
+  if(t&&DB.texture[t]){
+    const d=DB.texture[t];
+    sec+=`<div class="result-section">
+      <p class="section-label"><i class="ti ti-sparkles" aria-hidden="true"></i>膚質適配底妝</p>
+      ${row('sparkles','底妝建議',d.foundation,d.logic)}
+    </div>`;
+  }
+  if(a&&DB.age[a]){
+    const d=DB.age[a];
+    sec+=`<div class="result-section">
+      <p class="section-label"><i class="ti ti-star" aria-hidden="true"></i>世代妝感風格</p>
+      ${row('star','推薦風格',`${d.style}（${d.pct}）`,`${d.desc}<br>${d.logic}`)}
+    </div>`;
+  }
+  const pills=CONSENSUS.map(c=>`<span class="cpill">${c}</span>`).join('');
+  area.innerHTML=`<div class="result-card">
+    <div class="result-header">
+      <i class="ti ti-checklist" aria-hidden="true"></i>
+      <span>您的個人化適配建議</span>
+    </div>
+    <div class="result-body">
+      ${sec}
+      <div class="consensus">
+        <p class="consensus-title"><i class="ti ti-users" aria-hidden="true"></i>跨群體職場彩妝共識基調（N = 169）</p>
+        <div class="consensus-pills">${pills}</div>
+      </div>
+      <p class="source-note">資料來源：本研究問卷調查（N = 169）、三位資深彩妝專家信度共識（Kendall's W = .893，16 個排序題組中 14 個達高度一致）及十位個案彩妝實作結果。本指南之詳細說明請參閱論文第五章第三節表 5-1。</p>
+    </div>
+  </div>`;
+}
+['sel-face','sel-skin','sel-texture','sel-age'].forEach(id=>{
+  document.getElementById(id).addEventListener('change',render);
+});
+</script>
+</body>
+</html>
